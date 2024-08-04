@@ -1177,7 +1177,7 @@ anime7.download##+js(aopw, app_advert)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/142720
 9ineverse.com,ikaskey.bktsk.com,live-theater.net,misskey.art,misskey.gamelore.fun,misskey.io,misskey.oga.ninja,mk.yopo.work,nijimiss.moe,oekakiskey.com,sushi.ski,trpger.us,warpday.net,zadankai.club##+js(json-prune, ads.[-].imageUrl)
 ! Misskey < 2024.3
-!##+js(json-prune-fetch-response, ads.[].imageUrl, , propsToMatch, url:api/meta)
+!##+js(json-prune-fetch-response, ads.[-].imageUrl, , propsToMatch, url:api/meta)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22560
 hivelr.com##+js(aeld, load, detect-modal)
